@@ -5,7 +5,6 @@ class Index {
 
     _init() {
         this._observers = [];
-        this._history = {};
     }
 
     empty() {
@@ -21,8 +20,6 @@ class Index {
     fire(event, payload) {
         let responses = [];
 
-        this._archive(event, payload);
-
         for(let i = 0; i < this._observers.length; i++) {
             if(typeof this._observers[i][event] === 'function') {
                 let response = this._observers[i][event](payload);
@@ -36,18 +33,6 @@ class Index {
         }
 
         return responses;
-    }
-
-    history(event) {
-        return this._history[event];
-    }
-
-    _archive(event, payload) {
-        if( ! (event in this._history)) {
-            this._history[event] = [];
-        }
-
-        this._history[event].push(payload);
     }
 }
 
