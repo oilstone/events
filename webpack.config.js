@@ -6,6 +6,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'dispatcher.js',
         library: 'events',
-        libraryTarget: 'umd'
+        libraryTarget: 'umd',
+        globalObject: 'this',
     },
 };

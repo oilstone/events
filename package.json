@@ -1,6 +1,6 @@
 {
 	"name": "@oilstone/events",
-	"version": "1.1.2",
+	"version": "1.2.0",
 	"main": "dist/dispatcher.js",
 	"devDependencies": {
 		"webpack": "^5.6.0",

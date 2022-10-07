@@ -36,4 +36,8 @@ class Index {
     }
 }
 
+export {
+    Index
+};
+
 export default Index;
