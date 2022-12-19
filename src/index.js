@@ -1,4 +1,4 @@
-class Index {
+class Dispatcher {
     constructor() {
         this._init();
     }
@@ -37,7 +37,7 @@ class Index {
 }
 
 export {
-    Index
+    Dispatcher
 };
 
-export default Index;
+export default Dispatcher;
